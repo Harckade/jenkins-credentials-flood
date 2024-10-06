@@ -1,7 +1,7 @@
 # Jenkins Credentials Flood
 
 ## Description
-This software takes advantage of two bugs in the Jenkins Credentials Plugin. It allows users to interact with credentials in Jenkins by exploiting two bugs. One of them (duplicate IDs) is only affecting versions prior to `1337.v60b_d7b_c7b_c9f`. 
+This tool allows users to interact with the Jenkins Credentials Plugin to exploiting two bugs. One of them (duplicate IDs) is only affecting versions prior to `1337.v60b_d7b_c7b_c9f`. 
 
 ### Bugs
 1. **JENKINS-72611**: A bug affecting the Credentials Plugin prior to version `1337.v60b_d7b_c7b_c9f`. More details can be found [here](https://issues.jenkins.io/browse/JENKINS-72611).
