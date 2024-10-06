@@ -17,21 +17,6 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-To run the program, use the following command:
-
-```bash
-python jenkins_exploit_tool.py [COMMAND] [OPTIONS]
-Available Commands
-help - Show this help message.
-list - List all credentials from all stores.
-list STORE_PATH - List credentials from a specific store. E.g., list store/sub-store.
-add - Add a credential or a set of credentials to a specific store with any length. This may slow down users' browsers.
-poison - Add credentials with the same ID as already existing ones. This is only possible if the Credentials plugin version is prior to 1337.v60b_d7b_c7b_c9f.
-exit - Exit the program.
-```
-
-## Examples
-
 ### To run the tool using username and password
 ```bash
 python jenkins_exploit_tool.py -l https://localhost:8080 -u admin -p s#cr3tw0rd.
@@ -42,6 +27,19 @@ python jenkins_exploit_tool.py -l https://localhost:8080 -u admin -p s#cr3tw0rd.
 python jenkins_exploit_tool.py -l https://localhost:8080 -t JSESSIONID.3ca79i9ds3457ergg
 ```
 
+### List all available commands
+```bash
+python jenkins_exploit_tool.py --help
+Available Commands
+help - Show this help message.
+list - List all credentials from all stores.
+list STORE_PATH - List credentials from a specific store. E.g., list store/sub-store.
+add - Add a credential or a set of credentials to a specific store with any length. This may slow down users' browsers.
+poison - Add credentials with the same ID as already existing ones. This is only possible if the Credentials plugin version is prior to 1337.v60b_d7b_c7b_c9f.
+exit - Exit the program.
+```
+
+## Examples
 ### To display the help message
 ```bash
 python jenkins_exploit_tool.py -h
